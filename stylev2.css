@@ -126,6 +126,17 @@ main {
     padding-top: 3rem;
 }
 
+
+#technology-quote {
+    color: rgb(70, 153, 156);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/*
+Embed Video
+*/
+
     /* 
     Reference: the below way of resizing the embedded video is taken from Youtube:
     https://www.youtube.com/watch?v=9YffrCViTVk
@@ -149,15 +160,46 @@ main {
     border: none;
 }
 
-#technology-quote {
-    color: rgb(70, 153, 156);
-    font-size: 2.5rem;
-    text-align: center;
-}
+/*
+Table
+*/
 
 #how-long {
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
 
+#how-long tr {
+    border: solid;
+    border-width: 1px 0;
+}
+
+#how-long tr:first-child { /*stops the first non-caption row from displaying a border */
+    border-top: none;
+  }
+
+#how-long caption {
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#how-long tbody {
+    border-bottom: 2px solid black;
+}
+
+#how-long td {
+    padding: 3pt;
+}
+
+/*
+Calculator
+*/
+
+#sec-calculator {
+    
 }
 
 /*
@@ -172,4 +214,8 @@ footer {
     font-size: 16pt;
     text-align: center;
     padding: 3rem;
+}
+
+footer :visited {
+    color: black;
 }

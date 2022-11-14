@@ -31,15 +31,21 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 3vw; /* auto resizes the ocean cleanup based on viewport width */
+}
+
+h1 {
     padding-top: 5rem;
     padding-bottom: 5rem; /* creating some space around the header */
     margin: 0;
 }
 
 #header-the {
-    vertical-align: super;
     font-size: 0.8em; 
     font-weight: lighter;
+}
+
+#header-the {
+    vertical-align: super;
     position: relative;
     bottom: 0.4em;
 }
@@ -65,12 +71,14 @@ nav {
 }
 
 nav ul {
-    background-color: rgba(70, 69, 66, 0.6);
-    list-style-type: none;
     text-align: center;
+    background-color: rgba(70, 69, 66, 0.6);
+}
+
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding-left: 0;
-
 }
 
 nav li {
@@ -109,6 +117,9 @@ Headers h2-h6
 
 h2, h3 {    
     font-family: "Special Elite", sans-serif;
+}
+
+h2, h3 {    
     padding-top: 3rem;
 }
 
@@ -123,6 +134,9 @@ Main (outside header-navbar div)
 main {
     font-family: "EB Garamond", serif;
     font-size: 16pt;
+}
+
+main {
     max-width: 80ch;
     position: relative;
     margin: 0 auto 0 auto; /* this gets rid of the whitespace around the top and sides of the header */
@@ -211,6 +225,9 @@ figcaption {
     font-size: 8pt;
     font-family: "Special Elite", sans-serif;
     text-align: right;
+}
+
+figcaption {
     padding: 3px;
 }
 
@@ -253,8 +270,11 @@ Calculator
 */
 
 #calculator {
-    width: 18rem;
     background-color: rgb(252, 246, 196);
+}
+
+#calculator {
+    width: 18rem;
     border-radius: 1rem;
     box-shadow: 10px 10px 5px grey;
     outline-style: solid;
@@ -282,10 +302,13 @@ Calculator
 
 #calculator button {
     background-color:rgb(252, 246, 196);
+    font-weight: bolder;
+}
+
+#calculator button {
     padding: 0.5rem;
     border-radius: 0.5rem; /* border radius makes corners rounded */
     border-width: thin;
-    font-weight: bolder;
     float: right;
 }
 
@@ -301,9 +324,16 @@ footer {
     background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
     background-repeat: no-repeat;
     background-position: center center; 
+}
+
+footer {
     font-family: "Darker Grotesque", sans-serif;
     font-size: 16pt;
     text-align: center;
+    padding: 3rem;
+}
+
+footer {
     padding: 3rem;
 }
 
@@ -379,10 +409,13 @@ footer :visited {
     */
 
     #calculator {
+        font-size: 12pt;
+    }
+
+    #calculator {
         width: 14rem;
         margin: 1rem;
         position: static;
-        font-size: 12pt;
     }
 
 }

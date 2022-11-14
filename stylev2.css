@@ -30,9 +30,11 @@ h1 {
     text-shadow: 0.1em 0.1em 0.1em #615f5a;
     text-transform: uppercase;
     text-align: center;
-    font-size: 5vw; /* auto resizes the ocean cleanup based on viewport width */
-    padding: 5rem; /* creating some space around the header */
+    font-size: 3vw; /* auto resizes the ocean cleanup based on viewport width */
+    padding-top: 5rem;
+    padding-bottom: 5rem; /* creating some space around the header */
     margin: 0;
+    position: relative;
 }
 
 #header-the {
@@ -73,7 +75,7 @@ nav ul {
 nav li {
     display: inline-block; /* converting the lines into boxes */
     margin: 0;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.1rem 0.5em 0.1rem;
     width: 13rem;
 }
 
@@ -128,13 +130,14 @@ main {
 
 
 #technology-quote {
+    font-family: "EB Garamond", serif;
     color: rgb(70, 153, 156);
     font-size: 2.5rem;
     text-align: center;
 }
 
 /*
-Embed Video
+Embedded Video
 */
 
     /* 
@@ -158,6 +161,51 @@ Embed Video
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/*
+Images
+*/
+
+#map-of-debris, #boyan-slat, #system-001b, #interceptor {
+    border: thin #c0c0c0 solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(177, 177, 177);
+    padding: 5px;
+    margin: auto;
+}
+
+#map-of-debris, #system-001b {
+    transform: rotate(-2deg);
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    max-width: 300px;
+}
+
+#boyan-slat, #interceptor {
+    transform: rotate(2deg);
+    float: right;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+#map-of-debris-image, #system-001b-image {
+    max-width: 300px;
+    max-height: 204px;
+}
+
+#boyan-slat-image, #interceptor-image {
+    max-width: 250px;
+    max-height: 170px;
+}
+
+figcaption {
+    color: rgb(129, 129, 129);
+    font-size: 8pt;
+    font-family: "Special Elite", sans-serif;
+    text-align: right;
+    padding: 3px;
 }
 
 /*
@@ -198,8 +246,45 @@ Table
 Calculator
 */
 
-#sec-calculator {
-    
+#calculator {
+    width: 18rem;
+    background-color: rgb(252, 246, 196);
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px grey;
+    outline-style: solid;
+    outline-width: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    left: 56rem;
+    bottom: 0rem;
+}   
+
+#calculator h2,h3 {
+    padding-top: 1rem;  
+    padding-right: 1rem;
+}
+
+#calculator input[type=number] {
+    width: 2rem;
+}
+
+#calculator td {
+    width: 9rem;
+    padding-right: 1rem;
+}
+
+#calculator button {
+    background-color:rgb(252, 246, 196);
+    padding: 0.5rem;
+    border-radius: 0.5rem; /* border radius makes corners rounded */
+    border-width: thin;
+    font-weight: bolder;
+    float: right;
+}
+
+select #sharehousehold {
+    float: right;
 }
 
 /*
@@ -218,4 +303,10 @@ footer {
 
 footer :visited {
     color: black;
+}
+
+@media (min-width: 800px) {
+
+
+
 }

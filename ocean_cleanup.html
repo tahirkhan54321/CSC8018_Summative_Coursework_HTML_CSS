@@ -81,7 +81,7 @@
                 taken.</p>
 
             <figure id="map-of-debris">
-                <img src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png"
+                <img id="map-of-debris-image" src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png"
                     alt="Map of plastic debris" title="Debris map">
                 <figcaption>Garbage patches have formed in all five oceanic gyres.</figcaption>
             </figure>
@@ -170,7 +170,7 @@
             <h2>History</h2>
 
             <figure id="boyan-slat">
-                <img src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg"
+                <img id="boyan-slat-image" src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg"
                     alt="Boyan Slat" title="Boyan Slat">
                 <figcaption>Boyan Slat in 2018</figcaption>
             </figure>
@@ -231,7 +231,7 @@
                 vessel traffic services.</p>
 
             <figure id="system-001b">
-                <img src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg"
+                <img id="system-001b-image" src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg"
                     alt="System 001/B" title="System 001/B">
                 <figcaption>System 001/B in the ocean </figcaption>
             </figure>
@@ -276,7 +276,7 @@
             <h3>River Interception</h3>
 
             <figure id="interceptor">
-                <img src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg"
+                <img id="interceptor-image" src="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg"
                     alt="Interceptor" title="Interceptor">
                 <figcaption>Interceptor in the Domenican Republic</figcaption>
             </figure>
@@ -318,96 +318,98 @@
                 recycling products go into their continued cleanup projects.</p>
         </section>
 
-        <section id="sec_calculator">
-            <h2>Check Your Own Plastic Footprint</h2>
+        <div id="calculator">
+            <section id="sec_calculator">
+                <h2>Check Your Own Plastic Footprint</h2>
 
-            <h3>Food & Kitchen</h3>
+                <h3>Food & Kitchen</h3>
 
-            <table>
-                <tr>
-                    <td>Plastic bottles</td>
-                    <td><input type="number" value="0"> / week</td>
-                </tr>
-                <tr>
-                    <td>Plastic bags</td>
-                    <td><input type="number" value="0"> / week</td>
-                </tr>
-                <tr>
-                    <td>Food wrapping</td>
-                    <td><input type="number" value="0"> / week</td>
-                </tr>
-                <tr>
-                    <td>Yogurt, cream, etc. containers</td>
-                    <td><input type="number" value="0"> / week </td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <td>Plastic bottles</td>
+                        <td><input type="number" value="0"> / week</td>
+                    </tr>
+                    <tr>
+                        <td>Plastic bags</td>
+                        <td><input type="number" value="0"> / week</td>
+                    </tr>
+                    <tr>
+                        <td>Food wrapping</td>
+                        <td><input type="number" value="0"> / week</td>
+                    </tr>
+                    <tr>
+                        <td>Yogurt, cream, etc. containers</td>
+                        <td><input type="number" value="0"> / week </td>
+                    </tr>
+                </table>
 
-            <h3>Disposable Containers & Packaging</h3>
+                <h3>Disposable Containers & Packaging</h3>
 
-            <table>
-                <tr>
-                    <td>Take-away plastic boxes</td>
-                    <td><input type="number" value="0"> / month</td>
-                </tr>
-                <tr>
-                    <td>Take-away cups</td>
-                    <td><input type="number" value="0"> / month</td>
-                </tr>
-                <tr>
-                    <td>Plastic-wrapped packages</td>
-                    <td><input type="number" value="0"> / month</td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <td>Take-away plastic boxes</td>
+                        <td><input type="number" value="0"> / month</td>
+                    </tr>
+                    <tr>
+                        <td>Take-away cups</td>
+                        <td><input type="number" value="0"> / month</td>
+                    </tr>
+                    <tr>
+                        <td>Plastic-wrapped packages</td>
+                        <td><input type="number" value="0"> / month</td>
+                    </tr>
+                </table>
 
-            <h3>Bathroom & Laundry</h3>
+                <h3>Bathroom & Laundry</h3>
 
-            <table>
-                <tr>
-                    <td>Detergent & cleaning product bottles</td>
-                    <td><input type="number" value="0"> / year</td>
-                </tr>
-                <tr>
-                    <td>Shampoo, conditioner & toiletries</td>
-                    <td><input type="number" value="0"> / year</td>
-                </tr>
-                <tr>
-                    <td>Plastic toothbrushes</td>
-                    <td><input type="number" value="0"> / year</td>
-                </tr>
-                <tr>
-                    <td>Toothpaste</td>
-                    <td><input type="number" value="0"> / year</td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <td>Detergent & cleaning product bottles</td>
+                        <td><input type="number" value="0"> / year</td>
+                    </tr>
+                    <tr>
+                        <td>Shampoo, conditioner & toiletries</td>
+                        <td><input type="number" value="0"> / year</td>
+                    </tr>
+                    <tr>
+                        <td>Plastic toothbrushes</td>
+                        <td><input type="number" value="0"> / year</td>
+                    </tr>
+                    <tr>
+                        <td>Toothpaste</td>
+                        <td><input type="number" value="0"> / year</td>
+                    </tr>
+                </table>
 
-            <h3>Household size</h3>
+                <h3>Household size</h3>
 
-            <form action="" method="">
-                <label for="shareHousehold">With how many people do you share your household products?</label>
+                <form action="" method="">
+                    <label for="shareHousehold">With how many people do you share your household products?</label>
 
-                <select name="share" id="shareHousehold">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                </select>
+                    <select name="share" id="shareHousehold">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
 
-            </form>
+                </form>
 
-            <h3>Your Plastic Footprint</h3>
+                <h3>Your Plastic Footprint</h3>
 
-            Your estimated plastic footprint is <strong>0</strong> kg / year.
+                Your estimated plastic footprint is <strong>0</strong> kg / year.
 
-            <h3>Tip</h3>
-            Most of your plastic waste originates from <strong>unknown sources.</strong>
-            <br><br>
-            <button type="button">Reset calculator</button>
-            <br><br>
+                <h3>Tip</h3>
+                Most of your plastic waste originates from <strong>unknown sources.</strong>
+                <br><br>
+                <button type="button">Reset calculator</button>
+                <br><br>
 
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="page-footer">

@@ -45,6 +45,10 @@ var resetButton = document.getElementById("reset");
 
 /********* FUNCTIONS *************/
 
+function resetForm() {
+    document.getElementById("calculatorForm").reset();
+}
+
 function plasticFootprint () {
     
         /* Declare useful variables */
@@ -181,5 +185,6 @@ function changeTip () {
 
     peopleInHousehold.addEventListener('change', plasticFootprint);
 
+    resetButton.addEventListener('click', resetForm);
     resetButton.addEventListener('click', plasticFootprint);
     resetButton.addEventListener('click', changeTip);

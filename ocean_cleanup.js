@@ -49,142 +49,142 @@ function resetForm() {
     document.getElementById("calculatorForm").reset();
 }
 
-function plasticFootprint () {
-    
-        /* Declare useful variables */
-        var bottlesValue = +document.getElementById("bottles").value;
-        var bagsValue = +document.getElementById("bags").value;
-        var wrappingValue = +document.getElementById("wrapping").value;
-        var containersValue = +document.getElementById("containers").value;
-        var takeawayBoxValue = +document.getElementById("takeawayBox").value;
-        var cupsValue = +document.getElementById("cups").value;
-        var packagesValue = +document.getElementById("packages").value;
-        var cleaningValue = +document.getElementById("cleaning").value;
-        var toiletriesValue = +document.getElementById("toiletries").value;
-        var toothbrushesValue = +document.getElementById("toothbrushes").value;
-        var toothpasteValue = +document.getElementById("toothpaste").value;
+function plasticFootprint() {
 
-        var totalBottlesYearKg = 52 * bottlesValue * bottlesKgPerYear;
-        var totalBagsYearKg = 52* bagsValue * bagsKgPerYear;
-        var totalWrappingYearKg = 52 * wrappingValue * wrappingKgPerYear;
-        var totalContainersYearKg = 52 * containersValue * containersKgPerYear;
-        var totalTakeawayBoxYearKg = 12 * takeawayBoxValue * takeawayBoxKgPerYear;
-        var totalCupsYearKg = 12 * cupsValue * cupsKgPerYear;
-        var totalPackagesYearKg = 12 * packagesValue * packagesKgPerYear;
-        var totalCleaningYearKg = cleaningValue * cleaningKgPerYear;
-        var totalToiletriesYearKg = toiletriesValue * toiletriesKgPerYear;
-        var totalToothbrushesYearKg = toothbrushesValue * toothbrushesKgPerYear;
-        var totalToothpasteYearKg = toothpasteValue * toothpasteKgPerYear;
+    /* Declare useful variables */
+    var bottlesValue = +document.getElementById("bottles").value;
+    var bagsValue = +document.getElementById("bags").value;
+    var wrappingValue = +document.getElementById("wrapping").value;
+    var containersValue = +document.getElementById("containers").value;
+    var takeawayBoxValue = +document.getElementById("takeawayBox").value;
+    var cupsValue = +document.getElementById("cups").value;
+    var packagesValue = +document.getElementById("packages").value;
+    var cleaningValue = +document.getElementById("cleaning").value;
+    var toiletriesValue = +document.getElementById("toiletries").value;
+    var toothbrushesValue = +document.getElementById("toothbrushes").value;
+    var toothpasteValue = +document.getElementById("toothpaste").value;
 
-        /* Perform calculations */
-        var overallTotal = totalBottlesYearKg + totalBagsYearKg + totalWrappingYearKg + totalContainersYearKg + 
-            totalTakeawayBoxYearKg + totalCupsYearKg + totalPackagesYearKg + totalCleaningYearKg +
-                totalToiletriesYearKg + totalToothbrushesYearKg + totalToothpasteYearKg;
+    var totalBottlesYearKg = 52 * bottlesValue * bottlesKgPerYear;
+    var totalBagsYearKg = 52 * bagsValue * bagsKgPerYear;
+    var totalWrappingYearKg = 52 * wrappingValue * wrappingKgPerYear;
+    var totalContainersYearKg = 52 * containersValue * containersKgPerYear;
+    var totalTakeawayBoxYearKg = 12 * takeawayBoxValue * takeawayBoxKgPerYear;
+    var totalCupsYearKg = 12 * cupsValue * cupsKgPerYear;
+    var totalPackagesYearKg = 12 * packagesValue * packagesKgPerYear;
+    var totalCleaningYearKg = cleaningValue * cleaningKgPerYear;
+    var totalToiletriesYearKg = toiletriesValue * toiletriesKgPerYear;
+    var totalToothbrushesYearKg = toothbrushesValue * toothbrushesKgPerYear;
+    var totalToothpasteYearKg = toothpasteValue * toothpasteKgPerYear;
 
-        var peopleInHouseholdValue = +document.getElementById("shareHousehold").value;
+    /* Perform calculations */
+    var overallTotal = totalBottlesYearKg + totalBagsYearKg + totalWrappingYearKg + totalContainersYearKg +
+        totalTakeawayBoxYearKg + totalCupsYearKg + totalPackagesYearKg + totalCleaningYearKg +
+        totalToiletriesYearKg + totalToothbrushesYearKg + totalToothpasteYearKg;
 
-        var averageTotal = ((overallTotal / peopleInHouseholdValue * 1000) / 1000).toFixed(3);
-        
-        /* modify the plastic footprint on the page */
-        const footprint = document.querySelector('#footprint');
-        footprint.textContent = averageTotal;
+    var peopleInHouseholdValue = +document.getElementById("shareHousehold").value;
+
+    var averageTotal = ((overallTotal / peopleInHouseholdValue * 1000) / 1000).toFixed(3);
+
+    /* modify the plastic footprint on the page */
+    const footprint = document.querySelector('#footprint');
+    footprint.textContent = averageTotal;
 }
 
-function changeTip () {
+function changeTip() {
 
-        var bottlesValue = +document.getElementById("bottles").value;
-        var bagsValue = +document.getElementById("bags").value;
-        var wrappingValue = +document.getElementById("wrapping").value;
-        var containersValue = +document.getElementById("containers").value;
-        var takeawayBoxValue = +document.getElementById("takeawayBox").value;
-        var cupsValue = +document.getElementById("cups").value;
-        var packagesValue = +document.getElementById("packages").value;
-        var cleaningValue = +document.getElementById("cleaning").value;
-        var toiletriesValue = +document.getElementById("toiletries").value;
-        var toothbrushesValue = +document.getElementById("toothbrushes").value;
-        var toothpasteValue = +document.getElementById("toothpaste").value;
+    var bottlesValue = +document.getElementById("bottles").value;
+    var bagsValue = +document.getElementById("bags").value;
+    var wrappingValue = +document.getElementById("wrapping").value;
+    var containersValue = +document.getElementById("containers").value;
+    var takeawayBoxValue = +document.getElementById("takeawayBox").value;
+    var cupsValue = +document.getElementById("cups").value;
+    var packagesValue = +document.getElementById("packages").value;
+    var cleaningValue = +document.getElementById("cleaning").value;
+    var toiletriesValue = +document.getElementById("toiletries").value;
+    var toothbrushesValue = +document.getElementById("toothbrushes").value;
+    var toothpasteValue = +document.getElementById("toothpaste").value;
 
-        var totalBottlesYearKg = 52 * bottlesValue * bottlesKgPerYear;
-        var totalBagsYearKg = 52* bagsValue * bagsKgPerYear;
-        var totalWrappingYearKg = 52 * wrappingValue * wrappingKgPerYear;
-        var totalContainersYearKg = 52 * containersValue * containersKgPerYear;
-        var totalTakeawayBoxYearKg = 12 * takeawayBoxValue * takeawayBoxKgPerYear;
-        var totalCupsYearKg = 12 * cupsValue * cupsKgPerYear;
-        var totalPackagesYearKg = 12 * packagesValue * packagesKgPerYear;
-        var totalCleaningYearKg = cleaningValue * cleaningKgPerYear;
-        var totalToiletriesYearKg = toiletriesValue * toiletriesKgPerYear;
-        var totalToothbrushesYearKg = toothbrushesValue * toothbrushesKgPerYear;
-        var totalToothpasteYearKg = toothpasteValue * toothpasteKgPerYear;
+    var totalBottlesYearKg = 52 * bottlesValue * bottlesKgPerYear;
+    var totalBagsYearKg = 52 * bagsValue * bagsKgPerYear;
+    var totalWrappingYearKg = 52 * wrappingValue * wrappingKgPerYear;
+    var totalContainersYearKg = 52 * containersValue * containersKgPerYear;
+    var totalTakeawayBoxYearKg = 12 * takeawayBoxValue * takeawayBoxKgPerYear;
+    var totalCupsYearKg = 12 * cupsValue * cupsKgPerYear;
+    var totalPackagesYearKg = 12 * packagesValue * packagesKgPerYear;
+    var totalCleaningYearKg = cleaningValue * cleaningKgPerYear;
+    var totalToiletriesYearKg = toiletriesValue * toiletriesKgPerYear;
+    var totalToothbrushesYearKg = toothbrushesValue * toothbrushesKgPerYear;
+    var totalToothpasteYearKg = toothpasteValue * toothpasteKgPerYear;
 
-        /* initialise arrays to help find the maximum */
+    /* initialise arrays to help find the maximum */
 
-        var tipsArray = [bottlesTip, bagsTip, wrappingTip, containersTip, takeawayBoxTip, cupsTip,
-                            packagesTip, cleaningTip, toiletriesTip, toothbrushesTip, toothpasteTip];
+    var tipsArray = [bottlesTip, bagsTip, wrappingTip, containersTip, takeawayBoxTip, cupsTip,
+        packagesTip, cleaningTip, toiletriesTip, toothbrushesTip, toothpasteTip];
 
-        var valuesArray = [totalBottlesYearKg, totalBagsYearKg, totalWrappingYearKg, totalContainersYearKg, 
-            totalTakeawayBoxYearKg, totalCupsYearKg, totalPackagesYearKg, totalCleaningYearKg, 
-            totalToiletriesYearKg, totalToothbrushesYearKg, totalToothpasteYearKg]
+    var valuesArray = [totalBottlesYearKg, totalBagsYearKg, totalWrappingYearKg, totalContainersYearKg,
+        totalTakeawayBoxYearKg, totalCupsYearKg, totalPackagesYearKg, totalCleaningYearKg,
+        totalToiletriesYearKg, totalToothbrushesYearKg, totalToothpasteYearKg]
 
-        var objectNameArray = ["Plastic bottles", "Plastic bags", "Food wrapping", "Yogurt, cream, etc. containers", 
-                                "Take-away plastic boxes", "Take-away cups", "Plastic-wrapped packages", 
-                                "Detergent & cleaning product bottles", "Shampoo, conditioner & toiletries", 
-                                "Plastic toothbrushes", "Toothpaste"];
+    var objectNameArray = ["Plastic bottles", "Plastic bags", "Food wrapping", "Yogurt, cream, etc. containers",
+        "Take-away plastic boxes", "Take-away cups", "Plastic-wrapped packages",
+        "Detergent & cleaning product bottles", "Shampoo, conditioner & toiletries",
+        "Plastic toothbrushes", "Toothpaste"];
 
-        /* find maximum and store as variable */
-        var max = valuesArray[0];
-        var maxIndex = 0;
-        
-        for (var i = 1; i < valuesArray.length; i++) {
-            if (valuesArray[i] > max) {
-                maxIndex = i;
-                max = valuesArray[i];
-            }
-        }
+    /* find maximum and store as variable */
+    var max = valuesArray[0];
+    var maxIndex = 0;
 
-        var maxTip = tipsArray[maxIndex];
-        var maxObject = objectNameArray[maxIndex];
-        
-        /* modify the relevant tip and replace unknown sources with most plastic waste object */
-        const tip = document.querySelector('#tip');
-        const source = document.querySelector('#source');
-
-        if (max == 0) {
-            tip.textContent = "";
-            source.textContent = "unknown sources"
-        } else {
-            tip.textContent = maxTip;
-            source.textContent = maxObject;
+    for (var i = 1; i < valuesArray.length; i++) {
+        if (valuesArray[i] > max) {
+            maxIndex = i;
+            max = valuesArray[i];
         }
     }
 
-    /********* EVENT LISTENERS *************/
+    var maxTip = tipsArray[maxIndex];
+    var maxObject = objectNameArray[maxIndex];
 
-    bottles.addEventListener('change', plasticFootprint);
-    bags.addEventListener('change', plasticFootprint);
-    wrapping.addEventListener('change', plasticFootprint);
-    containers.addEventListener('change', plasticFootprint);
-    takeawayBox.addEventListener('change', plasticFootprint);
-    cups.addEventListener('change', plasticFootprint);
-    packages.addEventListener('change', plasticFootprint);
-    cleaning.addEventListener('change', plasticFootprint);
-    toiletries.addEventListener('change', plasticFootprint);
-    toothbrushes.addEventListener('change', plasticFootprint);
-    toothpaste.addEventListener('change', plasticFootprint);
+    /* modify the relevant tip and replace unknown sources with most plastic waste object */
+    const tip = document.querySelector('#tip');
+    const source = document.querySelector('#source');
 
-    bottles.addEventListener('change', changeTip);
-    bags.addEventListener('change', changeTip);
-    wrapping.addEventListener('change', changeTip);
-    containers.addEventListener('change', changeTip);
-    takeawayBox.addEventListener('change', changeTip);
-    cups.addEventListener('change', changeTip);
-    packages.addEventListener('change', changeTip);
-    cleaning.addEventListener('change', changeTip);
-    toiletries.addEventListener('change', changeTip);
-    toothbrushes.addEventListener('change', changeTip);
-    toothpaste.addEventListener('change', changeTip);
+    if (max == 0) {
+        tip.textContent = "";
+        source.textContent = "unknown sources"
+    } else {
+        tip.textContent = maxTip;
+        source.textContent = maxObject;
+    }
+}
 
-    peopleInHousehold.addEventListener('change', plasticFootprint);
+/********* EVENT LISTENERS *************/
 
-    resetButton.addEventListener('click', resetForm);
-    resetButton.addEventListener('click', plasticFootprint);
-    resetButton.addEventListener('click', changeTip);
+bottles.addEventListener('change', plasticFootprint);
+bags.addEventListener('change', plasticFootprint);
+wrapping.addEventListener('change', plasticFootprint);
+containers.addEventListener('change', plasticFootprint);
+takeawayBox.addEventListener('change', plasticFootprint);
+cups.addEventListener('change', plasticFootprint);
+packages.addEventListener('change', plasticFootprint);
+cleaning.addEventListener('change', plasticFootprint);
+toiletries.addEventListener('change', plasticFootprint);
+toothbrushes.addEventListener('change', plasticFootprint);
+toothpaste.addEventListener('change', plasticFootprint);
+
+bottles.addEventListener('change', changeTip);
+bags.addEventListener('change', changeTip);
+wrapping.addEventListener('change', changeTip);
+containers.addEventListener('change', changeTip);
+takeawayBox.addEventListener('change', changeTip);
+cups.addEventListener('change', changeTip);
+packages.addEventListener('change', changeTip);
+cleaning.addEventListener('change', changeTip);
+toiletries.addEventListener('change', changeTip);
+toothbrushes.addEventListener('change', changeTip);
+toothpaste.addEventListener('change', changeTip);
+
+peopleInHousehold.addEventListener('change', plasticFootprint);
+
+resetButton.addEventListener('click', resetForm);
+resetButton.addEventListener('click', plasticFootprint);
+resetButton.addEventListener('click', changeTip);

@@ -143,7 +143,6 @@ main {
     padding-top: 3rem;
 }
 
-
 #technology-quote {
     font-family: "EB Garamond", serif;
     color: rgb(70, 153, 156);
@@ -343,14 +342,40 @@ footer :visited {
 
 /*********************** Responsive Layout **************************/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1700px) {
 
     /* 
     Header h1
     */
 
     h1 {
-        font-size: 6vw; /* auto resizes the ocean cleanup based on viewport width */
+        font-size: 4vw; /* auto resizes the ocean cleanup based on viewport width */
+    }
+
+    /*
+    Calculator
+    */
+
+    #calculator {
+        font-size: 12pt;
+    }
+
+    #calculator {
+        width: 14rem;
+        margin: 1rem;
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* 
+    Header h1
+    */
+
+    h1 {
+        font-size: 5vw; /* auto resizes the ocean cleanup based on viewport width */
     }
 
     /*
@@ -402,19 +427,4 @@ footer :visited {
         max-width: 280px;
         max-height: 177px;
     }
-
-    /*
-    Calculator
-    */
-
-    #calculator {
-        font-size: 12pt;
-    }
-
-    #calculator {
-        width: 14rem;
-        margin: 1rem;
-        position: static;
-    }
-
 }

@@ -73,7 +73,6 @@ function plasticFootprint () {
         var totalToothpasteYearKg = toothpasteValue * toothpasteKgPerYear;
 
         /* Perform calculations */
-
         var overallTotal = totalBottlesYearKg + totalBagsYearKg + totalWrappingYearKg + totalContainersYearKg + 
             totalTakeawayBoxYearKg + totalCupsYearKg + totalPackagesYearKg + totalCleaningYearKg +
                 totalToiletriesYearKg + totalToothbrushesYearKg + totalToothpasteYearKg;
@@ -141,8 +140,7 @@ function changeTip () {
         var maxTip = tipsArray[maxIndex];
         var maxObject = objectNameArray[maxIndex];
         
-        /* print out the relevant tip and replace unknown sources with most plastic waste object */
-
+        /* modify the relevant tip and replace unknown sources with most plastic waste object */
         const tip = document.querySelector('#tip');
         const source = document.querySelector('#source');
 

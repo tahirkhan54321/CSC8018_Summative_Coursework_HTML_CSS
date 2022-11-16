@@ -300,12 +300,12 @@ Calculator
     padding-right: 1rem;
 }
 
-#calculator button {
+#calculator #reset {
     background-color:rgb(252, 246, 196);
     font-weight: bolder;
 }
 
-#calculator button {
+#calculator #reset {
     padding: 0.5rem;
     border-radius: 0.5rem; /* border radius makes corners rounded */
     border-width: thin;

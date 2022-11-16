@@ -40,6 +40,7 @@ var toiletries = document.getElementById("toiletries");
 var toothbrushes = document.getElementById("toothbrushes");
 var toothpaste = document.getElementById("toothpaste");
 var peopleInHousehold = document.getElementById("shareHousehold");
+var resetButton = document.getElementById("reset");
 
 
 /********* FUNCTIONS *************/
@@ -182,4 +183,5 @@ function changeTip () {
 
     peopleInHousehold.addEventListener('change', plasticFootprint);
 
-    /********* ADD RESET BUTTON *************/
+    resetButton.addEventListener('click', plasticFootprint);
+    resetButton.addEventListener('click', changeTip);
